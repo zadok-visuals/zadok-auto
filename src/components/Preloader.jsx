@@ -48,7 +48,7 @@ export default function Preloader({ onDone }) {
           {/* Body outline */}
           <path
             d="M20 80 L40 80 L55 50 L90 38 L130 34 L175 34 L215 42 L248 52 L265 68 L270 80 L280 80"
-            stroke={phase === 'fill' ? '#FF8A3D' : '#F2EEE6'}
+            stroke={phase === 'fill' ? '#C8602E' : '#1A1A1A'}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -63,7 +63,7 @@ export default function Preloader({ onDone }) {
           {/* Roof */}
           <path
             d="M90 38 L105 20 L195 20 L215 42"
-            stroke={phase === 'fill' ? '#FF8A3D' : '#F2EEE6'}
+            stroke={phase === 'fill' ? '#C8602E' : '#1A1A1A'}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -77,7 +77,7 @@ export default function Preloader({ onDone }) {
           {/* Windows */}
           <path
             d="M108 38 L115 24 L148 24 L148 38"
-            stroke={phase === 'fill' ? '#FF8A3D' : 'rgba(242,238,230,0.5)'}
+            stroke={phase === 'fill' ? '#C8602E' : 'rgba(26,26,26,0.3)'}
             strokeWidth="1.5"
             strokeLinecap="round"
             fill="none"
@@ -89,7 +89,7 @@ export default function Preloader({ onDone }) {
           />
           <path
             d="M152 38 L152 24 L192 24 L210 42"
-            stroke={phase === 'fill' ? '#FF8A3D' : 'rgba(242,238,230,0.5)'}
+            stroke={phase === 'fill' ? '#C8602E' : 'rgba(26,26,26,0.3)'}
             strokeWidth="1.5"
             strokeLinecap="round"
             fill="none"
@@ -102,7 +102,7 @@ export default function Preloader({ onDone }) {
           {/* Ground line */}
           <line
             x1="10" y1="87" x2="290" y2="87"
-            stroke="rgba(199,204,209,0.15)"
+            stroke="#E5E3DC"
             strokeWidth="1"
             strokeDasharray="400"
             style={{
@@ -113,7 +113,7 @@ export default function Preloader({ onDone }) {
           {/* Rear wheel */}
           <circle
             cx="72" cy="87" r="18"
-            stroke={phase === 'fill' ? '#FF8A3D' : '#F2EEE6'}
+            stroke={phase === 'fill' ? '#C8602E' : '#1A1A1A'}
             strokeWidth="2"
             fill="none"
             strokeDasharray="120"
@@ -122,11 +122,11 @@ export default function Preloader({ onDone }) {
               transition: 'stroke-dashoffset 0.7s 0.5s ease-out, stroke 0.2s ease-out',
             }}
           />
-          <circle cx="72" cy="87" r="5" fill={phase === 'fill' ? '#FF8A3D' : '#F2EEE6'} style={{ transition: 'fill 0.2s ease-out' }} />
+          <circle cx="72" cy="87" r="5" fill={phase === 'fill' ? '#C8602E' : '#1A1A1A'} style={{ transition: 'fill 0.2s ease-out' }} />
           {/* Front wheel */}
           <circle
             cx="228" cy="87" r="18"
-            stroke={phase === 'fill' ? '#FF8A3D' : '#F2EEE6'}
+            stroke={phase === 'fill' ? '#C8602E' : '#1A1A1A'}
             strokeWidth="2"
             fill="none"
             strokeDasharray="120"
@@ -135,11 +135,11 @@ export default function Preloader({ onDone }) {
               transition: 'stroke-dashoffset 0.7s 0.55s ease-out, stroke 0.2s ease-out',
             }}
           />
-          <circle cx="228" cy="87" r="5" fill={phase === 'fill' ? '#FF8A3D' : '#F2EEE6'} style={{ transition: 'fill 0.2s ease-out' }} />
+          <circle cx="228" cy="87" r="5" fill={phase === 'fill' ? '#C8602E' : '#1A1A1A'} style={{ transition: 'fill 0.2s ease-out' }} />
           {/* Front detail */}
           <path
             d="M265 68 L275 68 L278 72 L278 82"
-            stroke={phase === 'fill' ? '#FF8A3D' : '#F2EEE6'}
+            stroke={phase === 'fill' ? '#C8602E' : '#1A1A1A'}
             strokeWidth="2"
             strokeLinecap="round"
             fill="none"
@@ -157,8 +157,8 @@ export default function Preloader({ onDone }) {
         fontFamily: 'var(--font-mono)',
         fontSize: '0.55rem',
         letterSpacing: '0.2em',
-        color: 'rgba(199,204,209,0.3)',
-        textTransform: 'uppercase',
+        color: '#E5E3DC',
+        
         opacity: phase === 'drawing' ? 0 : 1,
         transition: 'opacity 0.4s ease-out 0.6s',
       }}>

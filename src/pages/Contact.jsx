@@ -86,7 +86,7 @@ export default function Contact() {
             <h2 style={{
               fontFamily: 'var(--font-display)',
               fontSize: '1.8rem', fontWeight: 900,
-              textTransform: 'uppercase', letterSpacing: '0.04em',
+               letterSpacing: '0.04em',
               color: 'var(--ivory)', marginBottom: '1rem',
             }}>
               Request received.
@@ -117,7 +117,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <section style={{ background: 'var(--graphite)', padding: '4rem 0 6rem', borderBottom: '1px solid rgba(199,204,209,0.06)' }}>
+      <section style={{ background: 'var(--graphite)', padding: '4rem 0 6rem', borderBottom: '1px solid #E5E3DC' }}>
         <div className="container">
           <div className="contact-grid">
             {/* Form */}
@@ -126,8 +126,8 @@ export default function Contact() {
                 fontFamily: 'var(--font-mono)',
                 fontSize: '0.55rem',
                 letterSpacing: '0.2em',
-                textTransform: 'uppercase',
-                color: 'rgba(199,204,209,0.4)',
+                
+                color: 'rgba(107,107,104,0.4)',
                 marginBottom: '2rem',
               }}>
                 All fields marked * are required
@@ -143,7 +143,7 @@ export default function Contact() {
                     type="text"
                     value={form.carInquiry}
                     onChange={set('carInquiry')}
-                    style={{ background: 'rgba(255,138,61,0.04)', borderColor: 'rgba(255,138,61,0.2)' }}
+                    style={{ background: 'rgba(200,96,46,0.04)', borderColor: 'rgba(200,96,46,0.2)' }}
                   />
                 </div>
               )}
@@ -280,10 +280,10 @@ export default function Contact() {
                     display: 'flex', justifyContent: 'space-between',
                     fontSize: '0.82rem', color: 'var(--silver)',
                     paddingBlock: '0.5rem',
-                    borderBottom: '1px solid rgba(199,204,209,0.06)',
+                    borderBottom: '1px solid #E5E3DC',
                   }}>
                     <span>{h.day}</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: h.hours === 'Closed' ? 'rgba(199,204,209,0.35)' : 'var(--amber)' }}>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: h.hours === 'Closed' ? 'rgba(107,107,104,0.35)' : 'var(--amber)' }}>
                       {h.hours}
                     </span>
                   </div>

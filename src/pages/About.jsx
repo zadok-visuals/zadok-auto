@@ -40,7 +40,7 @@ export default function About() {
       </div>
 
       {/* Story section */}
-      <section style={{ background: 'var(--graphite)', padding: '5rem 0', borderBottom: '1px solid rgba(199,204,209,0.06)' }}>
+      <section style={{ background: 'var(--graphite)', padding: '5rem 0', borderBottom: '1px solid #E5E3DC' }}>
         <div className="container">
           <FadeInSection>
             <div className="about-section">
@@ -62,7 +62,7 @@ export default function About() {
               </div>
               <div style={{
                 background: 'var(--graphite2)',
-                border: '1px solid rgba(199,204,209,0.1)',
+                border: '1px solid #E5E3DC',
                 borderTop: '3px solid var(--amber)',
                 padding: '2.5rem',
               }}>
@@ -70,7 +70,7 @@ export default function About() {
                   fontFamily: 'var(--font-display)',
                   fontSize: '1.5rem',
                   fontWeight: 900,
-                  textTransform: 'uppercase',
+                  
                   letterSpacing: '0.04em',
                   color: 'var(--ivory)',
                   lineHeight: 1.2,
@@ -78,7 +78,7 @@ export default function About() {
                 }}>
                   "We only list what we'd buy."
                 </p>
-                <div style={{ borderTop: '1px solid rgba(199,204,209,0.08)', paddingTop: '1.5rem' }}>
+                <div style={{ borderTop: '1px solid #E5E3DC', paddingTop: '1.5rem' }}>
                   {[
                     ['Vehicles listed since 2018', '94'],
                     ['Average days to sell', '12'],
@@ -88,7 +88,7 @@ export default function About() {
                     <div key={label} style={{
                       display: 'flex', justifyContent: 'space-between',
                       paddingBlock: '0.6rem',
-                      borderBottom: '1px solid rgba(199,204,209,0.06)',
+                      borderBottom: '1px solid #E5E3DC',
                     }}>
                       <span style={{ fontSize: '0.82rem', color: 'var(--silver)' }}>{label}</span>
                       <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9rem', color: 'var(--amber)' }}>{val}</span>
@@ -102,7 +102,7 @@ export default function About() {
       </section>
 
       {/* Inspection process */}
-      <section style={{ background: 'var(--graphite2)', padding: '5rem 0', borderBottom: '1px solid rgba(199,204,209,0.06)' }}>
+      <section style={{ background: 'var(--graphite2)', padding: '5rem 0', borderBottom: '1px solid #E5E3DC' }}>
         <div className="container">
           <FadeInSection style={{ marginBottom: '3rem', textAlign: 'center' }}>
             <p className="section-label">How we work</p>
@@ -115,14 +115,14 @@ export default function About() {
               <FadeInSection key={step.title} delay={i * 80}>
                 <div style={{
                   background: 'var(--graphite)',
-                  border: '1px solid rgba(199,204,209,0.08)',
+                  border: '1px solid #E5E3DC',
                   borderTop: '2px solid var(--amber)',
                   padding: '2rem 1.75rem',
                   height: '100%',
                 }}>
                   <div style={{
                     width: 44, height: 44,
-                    border: '1px solid rgba(199,204,209,0.15)',
+                    border: '1px solid #E5E3DC',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     color: 'var(--amber)',
                     marginBottom: '1.25rem',
@@ -134,7 +134,7 @@ export default function About() {
                     fontWeight: 800,
                     fontSize: '1rem',
                     letterSpacing: '0.06em',
-                    textTransform: 'uppercase',
+                    
                     color: 'var(--ivory)',
                     marginBottom: '0.6rem',
                   }}>
@@ -149,7 +149,7 @@ export default function About() {
       </section>
 
       {/* Values */}
-      <section style={{ background: 'var(--graphite)', padding: '5rem 0', borderBottom: '1px solid rgba(199,204,209,0.06)' }}>
+      <section style={{ background: 'var(--graphite)', padding: '5rem 0', borderBottom: '1px solid #E5E3DC' }}>
         <div className="container">
           <FadeInSection style={{ marginBottom: '2.5rem' }}>
             <p className="section-label">What we stand for</p>
@@ -185,7 +185,7 @@ export default function About() {
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link to="/contact" className="btn-primary">Book a viewing</Link>
-              <Link to="/inventory" className="btn-outline" style={{ borderColor: 'rgba(199,204,209,0.3)' }}>Browse inventory</Link>
+              <Link to="/inventory" className="btn-outline" style={{ borderColor: '#E5E3DC' }}>Browse inventory</Link>
             </div>
           </FadeInSection>
         </div>

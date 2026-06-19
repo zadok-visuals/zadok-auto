@@ -37,8 +37,8 @@ export default function Navbar({ heroHeight = 80 }) {
           {/* Logo */}
           <Link to="/" className="navbar__logo" aria-label="Zadok Auto — Home">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-              <rect x="1" y="1" width="20" height="20" stroke="#FF8A3D" strokeWidth="1.5"/>
-              <path d="M5 14 L8 9 L11 13 L14 8 L17 14" stroke="#FF8A3D" strokeWidth="1.5" strokeLinejoin="round" fill="none"/>
+              <rect x="1" y="1" width="20" height="20" stroke="#C8602E" strokeWidth="1.5"/>
+              <path d="M5 14 L8 9 L11 13 L14 8 L17 14" stroke="#C8602E" strokeWidth="1.5" strokeLinejoin="round" fill="none"/>
             </svg>
             Zadok <span>Auto</span>
           </Link>

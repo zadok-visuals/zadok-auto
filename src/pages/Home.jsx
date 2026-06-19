@@ -70,8 +70,9 @@ export default function Home() {
   const { scrollY } = useScroll();
 
   // Parallax transforms (disabled for reduced motion)
-  const bgY = useTransform(scrollY, [0, 800], prefersReducedMotion ? [0, 0] : [0, -100]);
-  const carY = useTransform(scrollY, [0, 800], prefersReducedMotion ? [0, 0] : [0, -60]);
+  // bg moves up fast, car moves up slower, creating depth
+  const bgY = useTransform(scrollY, [0, 1000], prefersReducedMotion ? [0, 0] : [0, -250]);
+  const carY = useTransform(scrollY, [0, 1000], prefersReducedMotion ? [0, 0] : [0, -80]);
   const carX = useTransform(scrollY, [0, 800], prefersReducedMotion ? [0, 0] : [0, -40]);
   const contentX = useTransform(scrollY, [0, 600], prefersReducedMotion ? [0, 0] : [0, 30]);
   const contentOpacity = useTransform(scrollY, [0, 500], [1, 0]);
@@ -86,20 +87,20 @@ export default function Home() {
         <motion.div className="hero__bg" style={{ y: bgY }}>
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'linear-gradient(135deg, #080a0d 0%, #15171C 35%, #1a2035 65%, #0a1020 100%)',
+            background: 'linear-gradient(135deg, #FFFFFF 0%, #FAFAF8 35%, #F0F0EE 65%, #E5E3DC 100%)',
           }} />
           {/* Subtle grid */}
           <div style={{
             position: 'absolute', inset: 0,
-            backgroundImage: 'linear-gradient(rgba(199,204,209,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(199,204,209,0.03) 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(rgba(107,107,104,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(107,107,104,0.05) 1px, transparent 1px)',
             backgroundSize: '80px 80px',
           }} />
           {/* Accent light */}
           <div style={{
             position: 'absolute',
-            right: '5%', top: '10%',
-            width: '45%', height: '80%',
-            background: 'radial-gradient(ellipse at center, rgba(255,138,61,0.06) 0%, transparent 70%)',
+            right: '10%', top: '15%',
+            width: '40%', height: '70%',
+            background: 'radial-gradient(ellipse at center, rgba(200,96,46,0.08) 0%, transparent 70%)',
             pointerEvents: 'none',
           }} />
         </motion.div>
@@ -115,14 +116,15 @@ export default function Home() {
             alt=""
             style={{
               position: 'absolute',
-              right: '-2%',
-              top: '50%',
+              right: '5%',
+              top: '55%',
               transform: 'translateY(-50%)',
-              width: '65%',
-              height: '90%',
-              objectFit: 'cover',
-              maskImage: 'linear-gradient(to left, rgba(0,0,0,0.9) 30%, transparent 100%)',
-              WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,0.9) 30%, transparent 100%)',
+              width: '55%',
+              height: 'auto',
+              maxHeight: '80%',
+              objectFit: 'contain',
+              maskImage: 'linear-gradient(to left, rgba(0,0,0,1) 50%, transparent 100%)',
+              WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,1) 50%, transparent 100%)',
             }}
             fetchpriority="high"
           />
@@ -165,7 +167,7 @@ export default function Home() {
         style={{
           padding: '6rem 0',
           background: 'var(--graphite)',
-          borderBottom: '1px solid rgba(199,204,209,0.06)',
+          borderBottom: '1px solid #E5E3DC',
         }}
       >
         <div className="container">
@@ -226,7 +228,7 @@ export default function Home() {
       {/* ── BENTO GRID ───────────────────────────────────── */}
       <section
         aria-label="Also on the lot"
-        style={{ padding: '6rem 0', background: 'var(--graphite2)', borderBottom: '1px solid rgba(199,204,209,0.06)' }}
+        style={{ padding: '6rem 0', background: 'var(--graphite2)', borderBottom: '1px solid #E5E3DC' }}
       >
         <div className="container">
           <FadeInSection style={{ marginBottom: '2.5rem' }}>
@@ -255,7 +257,7 @@ export default function Home() {
         style={{
           padding: '4rem 0',
           background: 'var(--graphite)',
-          borderBottom: '1px solid rgba(199,204,209,0.06)',
+          borderBottom: '1px solid #E5E3DC',
         }}
       >
         <div className="container">

@@ -37,8 +37,8 @@ export default function App() {
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 flexDirection: 'column', gap: '1.5rem', paddingTop: '5rem',
               }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '4rem', color: 'rgba(199,204,209,0.1)', fontWeight: 600 }}>404</span>
-                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ivory)' }}>
+                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '4rem', color: '#E5E3DC', fontWeight: 600 }}>404</span>
+                <h1 style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 900,  letterSpacing: '0.08em', color: 'var(--ivory)' }}>
                   Page not found
                 </h1>
                 <a href="/" className="btn-primary">Go home</a>

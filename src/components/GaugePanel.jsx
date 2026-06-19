@@ -39,7 +39,7 @@ export default function GaugePanel({ car, specBlocks, activeBlock }) {
 
       {/* Summary data */}
       <div style={{
-        borderTop: '1px solid rgba(199,204,209,0.08)',
+        borderTop: '1px solid #E5E3DC',
         paddingTop: '1.5rem',
         display: 'flex',
         flexDirection: 'column',
@@ -58,7 +58,7 @@ export default function GaugePanel({ car, specBlocks, activeBlock }) {
               fontFamily: 'var(--font-mono)',
               fontSize: '0.6rem',
               letterSpacing: '0.15em',
-              textTransform: 'uppercase',
+              
               color: 'var(--silver)',
             }}>
               {row.label}

@@ -88,7 +88,7 @@ export default function CarDetail() {
         paddingTop: '5.5rem',
         paddingBottom: '1.5rem',
         background: 'var(--graphite)',
-        borderBottom: '1px solid rgba(199,204,209,0.08)',
+        borderBottom: '1px solid #E5E3DC',
       }}>
         <div className="container">
           <Link
@@ -96,7 +96,7 @@ export default function CarDetail() {
             style={{
               display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
               fontFamily: 'var(--font-mono)', fontSize: '0.65rem',
-              letterSpacing: '0.15em', textTransform: 'uppercase',
+              letterSpacing: '0.15em', 
               color: 'var(--silver)',
               transition: 'color 150ms ease-out',
             }}
@@ -150,7 +150,7 @@ export default function CarDetail() {
                 fontFamily: 'var(--font-display)',
                 fontSize: 'clamp(1.5rem, 3vw, 2rem)',
                 fontWeight: 900,
-                textTransform: 'uppercase',
+                
                 letterSpacing: '0.04em',
                 color: 'var(--ivory)',
                 margin: '0.5rem 0 1.5rem',
@@ -181,7 +181,7 @@ export default function CarDetail() {
                 Book a viewing
               </Link>
 
-              <p style={{ fontSize: '0.75rem', color: 'rgba(199,204,209,0.4)', textAlign: 'center' }}>
+              <p style={{ fontSize: '0.75rem', color: 'rgba(107,107,104,0.4)', textAlign: 'center' }}>
                 Private appointment · No obligation
               </p>
 
@@ -190,12 +190,12 @@ export default function CarDetail() {
                 marginTop: '2rem',
                 padding: '1rem',
                 background: 'var(--graphite2)',
-                borderTop: '2px solid rgba(199,204,209,0.08)',
+                borderTop: '2px solid #E5E3DC',
               }}>
                 <p style={{
                   fontFamily: 'var(--font-mono)', fontSize: '0.55rem',
-                  letterSpacing: '0.2em', textTransform: 'uppercase',
-                  color: 'rgba(199,204,209,0.4)', marginBottom: '0.4rem',
+                  letterSpacing: '0.2em', 
+                  color: 'rgba(107,107,104,0.4)', marginBottom: '0.4rem',
                 }}>
                   VIN
                 </p>
@@ -212,7 +212,7 @@ export default function CarDetail() {
       </section>
 
       {/* Description */}
-      <section style={{ background: 'var(--graphite2)', borderTop: '1px solid rgba(199,204,209,0.06)', padding: '3rem 0' }}>
+      <section style={{ background: 'var(--graphite2)', borderTop: '1px solid #E5E3DC', padding: '3rem 0' }}>
         <div className="container">
           <p style={{
             fontFamily: 'var(--font-body)', fontSize: '1rem',
@@ -273,7 +273,7 @@ export default function CarDetail() {
                         ['Fuel', car.specs.fuelType],
                       ].map(([k, v]) => (
                         <div key={k}>
-                          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.55rem', letterSpacing: '0.18em', color: 'rgba(199,204,209,0.4)', textTransform: 'uppercase', marginBottom: '0.2rem' }}>{k}</p>
+                          <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.55rem', letterSpacing: '0.18em', color: 'rgba(107,107,104,0.4)',  marginBottom: '0.2rem' }}>{k}</p>
                           <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.85rem', color: 'var(--amber)' }}>{v}</p>
                         </div>
                       ))}
@@ -288,7 +288,7 @@ export default function CarDetail() {
 
       {/* ── RELATED CARS ─────────────────────────────────── */}
       {related.length > 0 && (
-        <section style={{ background: 'var(--graphite2)', borderTop: '1px solid rgba(199,204,209,0.06)', padding: '5rem 0' }}>
+        <section style={{ background: 'var(--graphite2)', borderTop: '1px solid #E5E3DC', padding: '5rem 0' }}>
           <div className="container">
             <FadeInSection style={{ marginBottom: '2rem' }}>
               <p className="section-label">You might also like</p>

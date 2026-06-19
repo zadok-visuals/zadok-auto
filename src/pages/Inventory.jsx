@@ -158,12 +158,12 @@ export default function Inventory() {
             <div style={{
               textAlign: 'center',
               padding: '6rem 0',
-              borderTop: '1px solid rgba(199,204,209,0.06)',
+              borderTop: '1px solid #E5E3DC',
             }}>
               <div style={{
                 fontFamily: 'var(--font-mono)',
                 fontSize: '2rem',
-                color: 'rgba(199,204,209,0.15)',
+                color: '#E5E3DC',
                 marginBottom: '1.5rem',
                 letterSpacing: '0.1em',
               }}>
@@ -173,7 +173,7 @@ export default function Inventory() {
                 fontFamily: 'var(--font-display)',
                 fontSize: '1.4rem',
                 fontWeight: 800,
-                textTransform: 'uppercase',
+                
                 letterSpacing: '0.04em',
                 color: 'var(--ivory)',
                 marginBottom: '0.5rem',

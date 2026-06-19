@@ -53,7 +53,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <span>© {year} Zadok Auto. All rights reserved.</span>
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: 'rgba(199,204,209,0.25)' }}>
+          <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#E5E3DC' }}>
             ZA / JHB / EST. 2018
           </span>
         </div>
